@@ -1,0 +1,1 @@
+I'm learning the guitar fretboard. This helps me learn it.
