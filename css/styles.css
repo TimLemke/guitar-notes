@@ -1,0 +1,38 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	line-height: 1.3em;
+}
+
+.container {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+label, input, button {
+	cursor: pointer;
+}
+
+label {
+	display: block;
+}
+
+input[type=checkbox] {
+	width: 20px;
+	height: 16px;
+}
+
+button {
+	font-size: 100%;
+	padding: 8px;
+	box-shadow: none;
+	background: none;
+	border: 1px solid;
+}
+
+#note {
+	font-size: 1.25em;
+}
+
+.hide {
+	display: none;
+}

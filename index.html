@@ -2,15 +2,23 @@
 <html>
   <head>
     <title>Learn yer guitar notes</title>
+    <link rel='stylesheet' type='text/css' href='css/styles.css' />
   </head>
   <body>
-    <p>
-      <label><input type='checkbox' checked id='naturals' />Natural notes</label>
-      <label><input type='checkbox' id='flats' />Flats</label>
-      <label><input type='checkbox' id='sharps' />Sharps</label>
-    </p>
-    <button onClick=getNote()>Get my note</button>
-    <div id='note'></div>
-    <script src='index.js' type='text/javascript'></script>
+    <div class='container'>
+      <p>This is an exercise to help you learn where the notes are on the guitar fretboard: it will show you a random note to play on a random string. It assumes a 6-string guitar in standard tuning, EADGBe, and the higher E string will be written lowercase.</p>
+      <p>Select which note collections you want to include (at least one). You can either get single notes at a time, or start a timer, which will show you a new note every 5 seconds.</p>
+      <p>
+        <label><input type='checkbox' checked id='naturals' />Natural notes</label>
+        <label><input type='checkbox' id='flats' />Flats</label>
+        <label><input type='checkbox' id='sharps' />Sharps</label>
+      </p>
+      <div class='buttons'>
+        <button id='timerToggle' onClick='timer()'>Start timer</button>
+        <button id='single' onClick='getNote()'>Get a note</button>
+      </div>
+      <div id='note'></div>
+    </div>
+    <script src='js/index.js' type='text/javascript'></script>
   </body>
 </html>
