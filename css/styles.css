@@ -1,11 +1,30 @@
 body {
 	font-family: Helvetica, Arial, sans-serif;
 	line-height: 1.3em;
+    background-image: url("images/background.png"); 
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-attachment: fixed;
 }
 
 .container {
 	max-width: 500px;
-	margin: 0 auto;
+	margin: auto;
+    padding: 50px;
+    border: 4px dotted #9f9fce;
+    border-radius: 10px;
+    background-color: white;
+}
+
+h3{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 label, input, button {
@@ -27,6 +46,8 @@ button {
 	box-shadow: none;
 	background: none;
 	border: 1px solid;
+    
+    
 }
 
 #note {
